@@ -1,0 +1,2 @@
+# 3rd-Year-Project-Mobile-Application
+A team project where the objective was to develop an android application called Last Man Standing, which is a popular game played among sports fans. The purpose of this mobile application was to provide the users with a user-friendly interface that allows them to manage their competitions. The application was developed using Android Studio. The repository contains the java files for the functionality of each page and the XML files for the design of each page.
