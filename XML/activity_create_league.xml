@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    tools:context="com.example.lastmanstanding.CreateLeagueActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/createLeagueForm">
+
+        <EditText
+            android:id="@+id/createLeagueLeagueName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/form_league_name"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/create_league_starting_gameweek"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/createLeagueStartingGameweek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/createLeagueDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/createLeagueProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/createLeagueForm"
+        app:layout_constraintLeft_toLeftOf="@+id/createLeagueForm"
+        app:layout_constraintRight_toRightOf="@+id/createLeagueForm"
+        app:layout_constraintTop_toTopOf="@+id/createLeagueForm" />
+
+    <Button
+        android:id="@+id/createLeagueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primary_color"
+        android:onClick="createLeague"
+        android:text="@string/create_league_page_name"
+        android:textColor="@color/white_text"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/createLeagueForm"
+        app:layout_constraintRight_toRightOf="@+id/createLeagueForm"
+        app:layout_constraintTop_toBottomOf="@+id/createLeagueForm" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/create_league_message"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        app:layout_constraintLeft_toLeftOf="@+id/createLeagueButton"
+        app:layout_constraintRight_toRightOf="@+id/createLeagueButton"
+        app:layout_constraintTop_toBottomOf="@+id/createLeagueButton" />
+
+</android.support.constraint.ConstraintLayout>

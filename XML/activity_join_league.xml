@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    tools:context="com.example.demov3.JoinLeagueActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/joinLeagueForm"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <EditText
+            android:id="@+id/joinLeagueLeagueName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/form_league_name"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/joinLeagueLeagueCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/form_league_code"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/joinLeagueProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/joinLeagueForm"
+        app:layout_constraintLeft_toLeftOf="@+id/joinLeagueForm"
+        app:layout_constraintRight_toRightOf="@+id/joinLeagueForm"
+        app:layout_constraintTop_toTopOf="@+id/joinLeagueForm" />
+
+    <Button
+        android:id="@+id/joinLeagueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primary_color"
+        android:text="@string/join_league_page_name"
+        android:textColor="@color/white_text"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@+id/joinLeagueForm"
+        app:layout_constraintRight_toRightOf="@+id/joinLeagueForm"
+        app:layout_constraintTop_toBottomOf="@+id/joinLeagueForm" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/join_league_message"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        app:layout_constraintLeft_toLeftOf="@+id/joinLeagueButton"
+        app:layout_constraintRight_toRightOf="@+id/joinLeagueButton"
+        app:layout_constraintTop_toBottomOf="@+id/joinLeagueButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

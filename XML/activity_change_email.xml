@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    tools:context="com.example.lastmanstanding.ChangeEmailActivity">
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/change_email_message_one"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView64"
+        app:layout_constraintRight_toRightOf="@+id/textView64"
+        app:layout_constraintTop_toBottomOf="@+id/textView64"
+        android:id="@+id/changeEmailForm">
+
+        <EditText
+            android:id="@+id/changeEmailNewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/change_email_new_email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/changeEmailPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/form_password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/changeEmailProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/changeEmailForm"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/changeEmailForm"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/changeEmailForm"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/changeEmailForm" />
+
+    <Button
+        android:id="@+id/changeEmailButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primary_color"
+        android:onClick="saveChanges"
+        android:text="@string/save_changes_button"
+        android:textColor="@color/white_text"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/changeEmailForm"
+        app:layout_constraintRight_toRightOf="@+id/changeEmailForm"
+        app:layout_constraintTop_toBottomOf="@+id/changeEmailForm" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/change_email_message_two"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        app:layout_constraintLeft_toLeftOf="@+id/changeEmailButton"
+        app:layout_constraintRight_toRightOf="@+id/changeEmailButton"
+        app:layout_constraintTop_toBottomOf="@+id/changeEmailButton" />
+
+</android.support.constraint.ConstraintLayout>
